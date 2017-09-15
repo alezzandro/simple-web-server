@@ -5,7 +5,7 @@ RUN mkdir -p /web
 COPY web /web
 RUN chmod g+r /web
 
-EXPOSE 80
+EXPOSE 8080
 
-CMD [ "go-wrapper", "run", "--port", "80" ]
+CMD [ "go-wrapper", "run", "--port", "8080" ]
 
